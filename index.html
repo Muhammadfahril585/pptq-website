@@ -18,17 +18,34 @@
 
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-    <nav id="navMenu">
-      <ul class="nav-menu">
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Profil</a></li>
-        <li><a href="#">Program</a></li>
-        <li><a href="#">Berita</a></li>
-        <li><a href="#">Kontak</a></li>
+    <nav>
+  <ul class="nav-menu">
+    <li><a href="index.html">Beranda</a></li>
+
+    <li class="dropdown">
+      <a href="#">Tentang Kami ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="tentang.html">Profil Pondok</a></li>
+        <li><a href="tentang.html">Visi & Misi</a></li>
+        <li><a href="tentang.html">Struktur Pengelola</a></li>
       </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#">Program ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="program.html">Tahfizh</a></li>
+        <li><a href="program.html">Tahsin</a></li>
+        <li><a href="program.html">Dirosah</a></li>
+      </ul>
+    </li>
+
+    <li><a href="pmb.html">PMB</a></li>
+    <li><a href="berita.html">Berita</a></li>
+    <li><a href="galeri.html">Galeri</a></li>
+    <li><a href="kontak.html">Kontak</a></li>
+  </ul>
     </nav>
-  </div>
-</header>
 
   <!-- HERO SECTION -->
   <section class="hero">
@@ -137,3 +154,4 @@
 </script>
 </body>
 </html>
+
