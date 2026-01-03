@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #e8f5e9;
+  padding: 15px 0;
+  border-bottom: 1px solid #c8e6c9;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #2e7d32;
+  font-size: 20px;
+}
+.logo img {
+  height: 45px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+      rgba(46, 125, 50, 0.8),
+      rgba(46, 125, 50, 0.8)
+    ),
+    url("assets/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn-hero {
+  background-color: #a5d6a7;
+  color: #1b5e20;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-hero:hover {
+  background-color: #81c784;
+}
+
+/* PROFIL */
+.profile {
+  padding: 70px 0;
+  background-color: #f9fdf9;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.profile-text h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.profile-text p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn-outline {
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+  padding: 10px 22px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-outline:hover {
+  background-color: #2e7d32;
+  color: white;
+}
+
+/* PROGRAM */
+.program {
+  padding: 70px 0;
+}
+
+.program h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.program-card {
+  background-color: #e8f5e9;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.program-card h3 {
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* NEWS */
+.news {
+  padding: 60px 0;
+}
+
+.news h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.news-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-content h3 {
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.news-content span {
+  font-size: 13px;
+  color: #777;
+}
+
+.news-content p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+/* HAMBURGER BUTTON */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #2e7d32;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    background-color: #e8f5e9;
+    position: absolute;
+    top: 65px;
+    right: 5%;
+    width: 200px;
+    padding: 15px;
+    display: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  nav.show .nav-menu {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+  .profile-grid {
+  grid-template-columns: 1fr;
+  }
+
+}
