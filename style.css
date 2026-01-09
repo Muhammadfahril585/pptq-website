@@ -303,6 +303,24 @@ body {
   .profile-grid {
   grid-template-columns: 1fr;
   }
-
+/* Perbaikan tambahan agar gambar responsif */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
+/* Pastikan section tidak saling tindih */
+section {
+  position: relative;
+  clear: both;
+}
+
+/* Perbaikan untuk mobile menu agar berfungsi dengan JS di atas */
+@media (max-width: 768px) {
+  #navbarContainer.show .nav-menu {
+    display: flex;
+  }
+}
+
 
