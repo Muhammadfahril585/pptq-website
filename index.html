@@ -8,108 +8,99 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <header class="navbar">
-  <div class="container nav-flex">
-    <div class="logo">
-      <img src="assets/images/logo.png" alt="Logo PPTQ Al-Itqon">
+    <div class="container nav-flex">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Logo PPTQ Al-Itqon">
+      </div>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <nav id="navbarContainer">
+        <ul class="nav-menu">
+          <li><a href="index.html">Beranda</a></li>
+
+          <li class="dropdown">
+            <a href="#">Tentang Kami ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="tentang.html">Profil Pondok</a></li>
+              <li><a href="tentang.html">Visi & Misi</a></li>
+              <li><a href="tentang.html">Struktur Pengelola</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Program ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="program.html">Tahfizh</a></li>
+              <li><a href="program.html">Tahsin</a></li>
+              <li><a href="program.html">Dirosah</a></li>
+            </ul>
+          </li>
+
+          <li><a href="pmb.html">PMB</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-    <nav>
-  <ul class="nav-menu">
-    <li><a href="index.html">Beranda</a></li>
-
-    <li class="dropdown">
-      <a href="#">Tentang Kami ▾</a>
-      <ul class="dropdown-menu">
-        <li><a href="tentang.html">Profil Pondok</a></li>
-        <li><a href="tentang.html">Visi & Misi</a></li>
-        <li><a href="tentang.html">Struktur Pengelola</a></li>
-      </ul>
-    </li>
-
-    <li class="dropdown">
-      <a href="#">Program ▾</a>
-      <ul class="dropdown-menu">
-        <li><a href="program.html">Tahfizh</a></li>
-        <li><a href="program.html">Tahsin</a></li>
-        <li><a href="program.html">Dirosah</a></li>
-      </ul>
-    </li>
-
-    <li><a href="pmb.html">PMB</a></li>
-    <li><a href="berita.html">Berita</a></li>
-    <li><a href="galeri.html">Galeri</a></li>
-    <li><a href="kontak.html">Kontak</a></li>
-  </ul>
-    </nav>
-
-  <!-- HERO SECTION -->
   <section class="hero">
-    <div class="container hero-content">
+    <div class="container">
       <h1>Pondok Pesantren Tahfizh Al-Qur’an Al-Itqon Gowa</h1>
       <p>Mencetak generasi Qur’ani yang berilmu, berakhlak, dan berkontribusi untuk umat.</p>
       <a href="#" class="btn-hero">Lihat Program</a>
     </div>
   </section>
 
-  <!-- PROFIL SINGKAT -->
-<section class="profile">
-  <div class="container profile-grid">
-    <div class="profile-text">
-      <h2>Tentang PPTQ Al-Itqon Gowa</h2>
-      <p>
-        PPTQ Al-Itqon Gowa adalah Pondok Pesantren Tahfizh Al-Qur’an yang berfokus
-        pada pembinaan hafalan Al-Qur’an, penguatan adab, dan pemahaman ilmu syar’i
-        sesuai manhaj Ahlus Sunnah wal Jama’ah.
-      </p>
-      <a href="#" class="btn-outline">Selengkapnya</a>
-    </div>
-
-    <div class="profile-image">
-      <img src="assets/images/hero.jpg" alt="Profil PPTQ Al-Itqon">
-    </div>
-  </div>
-</section>
-
-<!-- PROGRAM UNGGULAN -->
-<section class="program">
-  <div class="container">
-    <h2>Program Unggulan</h2>
-
-    <div class="program-grid">
-      <div class="program-card">
-        <h3>Tahfizh Al-Qur’an</h3>
-        <p>Program hafalan Al-Qur’an dengan target dan pendampingan musyrif.</p>
+  <section class="profile">
+    <div class="container profile-grid">
+      <div class="profile-text">
+        <h2>Tentang PPTQ Al-Itqon Gowa</h2>
+        <p>
+          PPTQ Al-Itqon Gowa adalah Pondok Pesantren Tahfizh Al-Qur’an yang berfokus
+          pada pembinaan hafalan Al-Qur’an, penguatan adab, dan pemahaman ilmu syar’i
+          sesuai manhaj Ahlus Sunnah wal Jama’ah.
+        </p>
+        <a href="#" class="btn-outline">Selengkapnya</a>
       </div>
 
-      <div class="program-card">
-        <h3>Tahsin & Tajwid</h3>
-        <p>Pembinaan bacaan Al-Qur’an sesuai kaidah tajwid yang benar.</p>
-      </div>
-
-      <div class="program-card">
-        <h3>Pembinaan Adab & Akhlak</h3>
-        <p>Penanaman adab islami dalam kehidupan sehari-hari santri.</p>
-      </div>
-
-      <div class="program-card">
-        <h3>Dirosah Ilmiyah</h3>
-        <p>Pembelajaran dasar-dasar ilmu syar’i secara bertahap.</p>
+      <div class="profile-image">
+        <img src="assets/images/hero.jpg" alt="Profil PPTQ Al-Itqon">
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- BERITA TERBARU -->
+  <section class="program">
+    <div class="container">
+      <h2>Program Unggulan</h2>
+      <div class="program-grid">
+        <div class="program-card">
+          <h3>Tahfizh Al-Qur’an</h3>
+          <p>Program hafalan Al-Qur’an dengan target dan pendampingan musyrif.</p>
+        </div>
+        <div class="program-card">
+          <h3>Tahsin & Tajwid</h3>
+          <p>Pembinaan bacaan Al-Qur’an sesuai kaidah tajwid yang benar.</p>
+        </div>
+        <div class="program-card">
+          <h3>Pembinaan Adab & Akhlak</h3>
+          <p>Penanaman adab islami dalam kehidupan sehari-hari santri.</p>
+        </div>
+        <div class="program-card">
+          <h3>Dirosah Ilmiyah</h3>
+          <p>Pembelajaran dasar-dasar ilmu syar’i secara bertahap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="news">
     <div class="container">
       <h2>Berita Terbaru</h2>
       <div class="news-grid">
-
         <div class="news-card">
           <img src="https://via.placeholder.com/400x250" alt="Berita">
           <div class="news-content">
@@ -118,7 +109,6 @@
             <p>Santri PPTQ Al-Itqon melaksanakan tasmi’ hafalan Al-Qur’an.</p>
           </div>
         </div>
-
         <div class="news-card">
           <img src="https://via.placeholder.com/400x250" alt="Berita">
           <div class="news-content">
@@ -127,7 +117,6 @@
             <p>Kegiatan dauroh untuk meningkatkan kualitas hafalan santri.</p>
           </div>
         </div>
-
         <div class="news-card">
           <img src="https://via.placeholder.com/400x250" alt="Berita">
           <div class="news-content">
@@ -136,22 +125,22 @@
             <p>Wisuda santri yang telah menyelesaikan hafalan Al-Qur’an.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <p>© 2026 PPTQ Al-Itqon Gowa. All rights reserved.</p>
     </div>
   </footer>
-<script>
-  function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("show");
-  }
-</script>
+
+  <script>
+    function toggleMenu() {
+      // Mengambil elemen nav berdasarkan ID yang benar
+      const nav = document.getElementById("navbarContainer");
+      nav.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
-
